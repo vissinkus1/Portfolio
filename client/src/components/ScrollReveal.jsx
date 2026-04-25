@@ -1,0 +1,34 @@
+import { useEffect, useRef } from 'react';
+
+/**
+ * Wraps children in a div that fades/slides in when scrolled into view.
+ * Ports the IntersectionObserver logic from the original static site.
+ */
+export default function ScrollReveal({ children, className = '' }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.add('visible');
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.12 }
+    );
+
+    observer.observe(el);
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className={`reveal ${className}`}>
+      {children}
+    </div>
+  );
+}
