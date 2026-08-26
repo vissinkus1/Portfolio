@@ -5,28 +5,36 @@ const Project = require('./models/Project');
 
 const projects = [
   {
-    title: 'Green Illusions – ESG Claim Verification',
+    title: 'Stock Price Forecasting – LSTM Neural Network',
     description:
-      'Built a multi-agent RAG system to verify ESG sustainability claims against real documents using FAISS vector search and AWS Bedrock (Titan Embeddings + Claude/Titan Text), delivering Supported / Contradicted / Insufficient Evidence verdicts with full explainability.',
-    tags: ['RAG', 'Multi-Agent AI', 'AWS Bedrock', 'FAISS', 'LangChain', 'Python'],
+      '3-layer Stacked LSTM (128→64→32) on 5-yr Yahoo Finance data — RMSE: 26.52 INR, MAPE: 1.45% (98.55% accuracy); 60-day sliding window, 80/20 chronological split, zero data leakage. Interactive Streamlit dashboard with candlestick charts, Bollinger Bands, RSI, 60-day autoregressive forecast — live on Render.',
+    tags: ['Python', 'TensorFlow', 'Keras', 'LSTM', 'Streamlit', 'Plotly', 'yfinance', 'Render'],
     link: '',
     order: 1,
   },
   {
-    title: 'AI Job Portal – MERN + LLM Microservices',
+    title: 'Green Illusions – ESG Claim Verification',
     description:
-      'Architecting an AI-powered job portal integrating LLM-based intelligent job matching and NLP resume parsing, with Python AI microservices connected to a MERN full-stack frontend.',
-    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'NLP', 'LangChain'],
+      'Multi-agent RAG pipeline (Retrieval, Verification, Verdict, Explanation Agents) verifying ESG claims via FAISS + AWS Bedrock — evidence-grounded verdicts with hallucination prevention and responsible AI guardrails.',
+    tags: ['RAG', 'Multi-Agent AI', 'AWS Bedrock', 'FAISS', 'LangChain', 'Python'],
     link: '',
     order: 2,
   },
   {
-    title: 'Sentiment Analysis – Live NLP Web App',
+    title: 'AI Job Portal – MERN + LLM Microservices',
     description:
-      'Built and deployed an end-to-end NLP classification AI application (positive/negative/neutral) with Flask REST API backend and Streamlit frontend, enabling real-time API calls for text classification.',
+      'Architecting full-stack AI job portal with LangChain intelligent job-matching, NLP resume parsing microservices, and RAG inspired semantic similarity — React.js frontend connected via REST APIs.',
+    tags: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Python', 'NLP', 'LangChain'],
+    link: '',
+    order: 3,
+  },
+  {
+    title: 'Sentiment Analysis NLP App',
+    description:
+      'End-to-end NLP text classifier (positive/negative/neutral) deployed as a live web app via Flask REST API + Streamlit frontend on Render.',
     tags: ['Python', 'NLTK', 'Scikit-learn', 'Flask', 'Streamlit', 'Render'],
     link: 'https://sentiment-flask-app-i1vg.onrender.com',
-    order: 3,
+    order: 4,
   },
 ];
 

@@ -72,4 +72,5 @@ Portfolio/
 
 **Vishal Singh Kushwaha**
 - GitHub: [vissinkus1](https://github.com/vissinkus1)
-- LinkedIn: [Vishal Singh Kushwaha](https://www.linkedin.com/in/vishal-singh-kushwaha-b11803306)
+- LinkedIn: [Vishal Singh Kushwaha](https://www.linkedin.com/in/vishal-singh-kushwaha27)
+

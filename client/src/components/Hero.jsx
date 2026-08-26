@@ -2,14 +2,10 @@ export default function Hero() {
   return (
     <section className="hero" aria-label="Introduction">
       <div className="hero-content">
-        <p className="eyebrow">AI Developer · LLMs · LangChain · RAG · MERN</p>
+        <p className="eyebrow">AI &amp; ML Engineer · Java · LangChain · RAG · MERN</p>
         <h1>Vishal Singh Kushwaha</h1>
         <p className="subtitle">
-          B.Tech CSE (AI &amp; ML) student with proven hands-on experience
-          building AI applications using RAG, Multi-Agent AI, LangChain, FAISS,
-          AWS Bedrock, MERN stack, Streamlit, and Flask. Passionate about
-          building intelligent, explainable AI systems using modern LLM
-          frameworks.
+          B.Tech CSE (AI &amp; ML) student at IILM University (CGPA: 7.9) with 3 internships delivering real-world ML and full-stack projects. Strong foundation in Java (primary language), DSA, and OOP with hands-on experience in Python, ML pipelines, LangChain, and MERN stack. Built deployed AI apps, a RAG-based ESG system (AWS Bedrock + FAISS), and an LSTM stock forecasting model (98.55% accuracy). AWS certified in ML, Generative AI, and Agentic AI.
         </p>
         <div className="cta-row">
           <a className="btn primary" href="#projects">
@@ -30,7 +26,7 @@ export default function Hero() {
         <div className="monogram">VK</div>
         <div className="card-text">
           <p className="card-title">B.Tech CSE (AI &amp; ML)</p>
-          <p>IILM University · CGPA: 8.38 · 2023–2027</p>
+          <p>IILM University · CGPA: 7.9 · 2023–2027</p>
           <div className="socials">
             <a
               href="https://github.com/vissinkus1"
@@ -52,3 +48,4 @@ export default function Hero() {
     </section>
   );
 }
+

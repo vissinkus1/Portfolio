@@ -4,10 +4,7 @@ export default function About() {
       <div className="section-header">
         <h2>About Me</h2>
         <p>
-          AI Developer with hands-on experience in RAG, Multi-Agent AI,
-          LangChain, and full-stack development. Passionate about building
-          intelligent, explainable AI systems using modern LLM frameworks
-          including LangChain, LangGraph, and RAG architectures.
+          B.Tech CSE (AI &amp; ML) student at IILM University (CGPA: 7.9) with 3 internships delivering real-world ML and full-stack projects. Strong foundation in Java (primary language), DSA, and OOP with hands-on experience in Python, ML pipelines, LangChain, and MERN stack. Built deployed AI apps, a RAG-based ESG system (AWS Bedrock + FAISS), and an LSTM stock forecasting model (98.55% accuracy). AWS certified in ML, Generative AI, and Agentic AI.
         </p>
       </div>
 
@@ -18,12 +15,17 @@ export default function About() {
             <div className="list-row">
               <span>B.Tech CSE (AI &amp; ML)</span>
               <span>IILM University, Greater Noida</span>
-              <span>2023–2027</span>
+              <span style={{ color: 'var(--accent-2)', fontWeight: '500' }}>2023–2027 · CGPA 7.9</span>
             </div>
             <div className="list-row">
-              <span style={{ color: 'var(--accent-2)' }}>CGPA: 8.38 / 10.0</span>
-              <span></span>
-              <span></span>
+              <span>Class 12th</span>
+              <span>St. John's School, Ghazipur</span>
+              <span style={{ color: 'var(--accent-2)', fontWeight: '500' }}>2022–2023 · 76.6%</span>
+            </div>
+            <div className="list-row">
+              <span>Class 10th</span>
+              <span>St. John's School, Ghazipur</span>
+              <span style={{ color: 'var(--accent-2)', fontWeight: '500' }}>2020–2021 · 89.5%</span>
             </div>
           </div>
         </div>
@@ -31,13 +33,14 @@ export default function About() {
         <div className="about-card">
           <h3>Achievements</h3>
           <div className="chip-grid">
-            <span className="chip">Won Naukri Campus Young Turks 2025</span>
-            <span className="chip">Hackathon Participant (Competitive AI Problem Solving)</span>
-            <span className="chip">Active on LeetCode, HackerRank &amp; Codeforces</span>
+            <span className="chip">Naukri Campus Young Turks 2025</span>
+            <span className="chip">Hackathon Participant – Green Illusions (RAG + Multi-Agent AI)</span>
             <span className="chip">School House Captain (2 consecutive years)</span>
+            <span className="chip">Active on LeetCode, HackerRank &amp; Codeforces</span>
           </div>
         </div>
       </div>
     </section>
   );
 }
+

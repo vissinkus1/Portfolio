@@ -1,23 +1,27 @@
 const skills = [
   {
-    title: 'AI Frameworks & LLMs',
-    detail:
-      'LangChain, LangGraph, LLMs (GPT / open-source), RAG, Agentic AI, LangSmith, MCP',
+    title: 'Languages',
+    detail: 'Java (Primary), Python, C, JavaScript',
   },
   {
-    title: 'Web & API Dev',
+    title: 'DSA & CS Core',
     detail:
-      'MERN Stack, FastAPI, Flask, Streamlit, REST API Integration, HTML/CSS/JS',
+      'Data Structures, Algorithms, OOP, DBMS, OS Concepts — Practised on LeetCode, HackerRank, Codeforces',
   },
   {
-    title: 'ML & Data Science',
+    title: 'ML & Data',
     detail:
-      'Python, Scikit-learn, TensorFlow, PyTorch, NLTK, NLP, Pandas, NumPy, Deep Learning',
+      'Scikit-learn, TensorFlow, PyTorch, NLP, Deep Learning, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Folium',
   },
   {
-    title: 'Tools & Platforms',
+    title: 'LLMs & GenAI',
     detail:
-      'Git/GitHub, Google Colab, AWS (ML + GenAI + Agentic AI certified), VS Code, Render',
+      'LangChain, RAG, FAISS, AWS Bedrock, Multi-Agent AI, Agentic AI, LangGraph',
+  },
+  {
+    title: 'Web & Deploy',
+    detail:
+      'MERN Stack (MongoDB, Express.js, React.js, Node.js), Flask, FastAPI, Streamlit, REST APIs, Git/GitHub, AWS, Render',
   },
 ];
 
@@ -27,8 +31,7 @@ export default function Skills() {
       <div className="section-header">
         <h2>Skills</h2>
         <p>
-          Strong foundation in AI/ML, LLM frameworks, and full-stack
-          development.
+          Strong technical foundation in Java, AI/ML, LLM frameworks, DSA, and full-stack development.
         </p>
       </div>
 
@@ -43,3 +46,4 @@ export default function Skills() {
     </section>
   );
 }
+
