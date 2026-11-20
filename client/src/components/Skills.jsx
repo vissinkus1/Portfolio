@@ -1,27 +1,27 @@
-const skills = [
+const skillCategories = [
   {
     title: 'Languages',
-    detail: 'Java (Primary), Python, C, JavaScript',
+    detail: 'Java (Primary / DSA & OOP), Python (ML & AI), JavaScript (ES6+), TypeScript, SQL, C',
   },
   {
-    title: 'DSA & CS Core',
-    detail:
-      'Data Structures, Algorithms, OOP, DBMS, OS Concepts — Practised on LeetCode, HackerRank, Codeforces',
+    title: 'GenAI, LLMs & Agents',
+    detail: 'LangChain, LangGraph, Multi-Agent Systems, RAG, FAISS Vector Search, pgvector, Google Gemini API, AWS Bedrock, Prompt Engineering, Human-in-the-Loop Review',
   },
   {
-    title: 'ML & Data',
-    detail:
-      'Scikit-learn, TensorFlow, PyTorch, NLP, Deep Learning, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Folium',
+    title: 'ML & Deep Learning',
+    detail: 'Scikit-learn, TensorFlow, Keras (Stacked LSTM), PyTorch, BERT / Transformers, NLP, Feature Engineering, Model Evaluation (RMSE, MAE, MAPE, R², Kappa)',
   },
   {
-    title: 'LLMs & GenAI',
-    detail:
-      'LangChain, RAG, FAISS, AWS Bedrock, Multi-Agent AI, Agentic AI, LangGraph',
+    title: 'Backend & Full-Stack',
+    detail: 'React 19, Vite, Node.js 20, Express 5, FastAPI, Flask, REST APIs, JWT Auth, Socket.io (WebSockets), Spring Boot, Hibernate',
   },
   {
-    title: 'Web & Deploy',
-    detail:
-      'MERN Stack (MongoDB, Express.js, React.js, Node.js), Flask, FastAPI, Streamlit, REST APIs, Git/GitHub, AWS, Render',
+    title: 'Databases & Data',
+    detail: 'PostgreSQL (pgvector), MongoDB Atlas, Mongoose, SQLite, H2, Pandas, NumPy, Matplotlib, Seaborn, Folium, Google Earth Engine',
+  },
+  {
+    title: 'DevOps & Testing',
+    detail: 'Docker, Docker Compose, Git/GitHub, Render, Vercel, pytest (71 automated tests), Vitest, Streamlit, Postman, Linux/Unix',
   },
 ];
 
@@ -31,12 +31,12 @@ export default function Skills() {
       <div className="section-header">
         <h2>Skills</h2>
         <p>
-          Strong technical foundation in Java, AI/ML, LLM frameworks, DSA, and full-stack development.
+          Technical competencies spanning Agentic AI, machine learning engineering, full-stack systems, and core computer science.
         </p>
       </div>
 
       <div className="skills-grid">
-        {skills.map((s, i) => (
+        {skillCategories.map((s, i) => (
           <div className="skill-card" key={i}>
             <h3>{s.title}</h3>
             <p>{s.detail}</p>
@@ -46,4 +46,3 @@ export default function Skills() {
     </section>
   );
 }
-

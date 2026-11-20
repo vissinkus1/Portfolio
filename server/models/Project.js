@@ -7,16 +7,31 @@ const projectSchema = new mongoose.Schema(
       required: [true, 'Title is required'],
       trim: true,
     },
+    badge: {
+      type: String,
+      default: '',
+    },
+    summary: {
+      type: String,
+      default: '',
+    },
     description: {
       type: String,
-      required: [true, 'Description is required'],
-      trim: true,
+      default: '',
+    },
+    bullets: {
+      type: [String],
+      default: [],
     },
     tags: {
       type: [String],
       default: [],
     },
     link: {
+      type: String,
+      default: '',
+    },
+    github: {
       type: String,
       default: '',
     },

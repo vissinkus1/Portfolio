@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
+  if (!process.env.MONGO_URI) {
+    console.log('⚠️  No MONGO_URI provided in environment. Running in offline/fallback mode.');
+    return;
+  }
   const maxRetries = 5;
   for (let i = 1; i <= maxRetries; i++) {
     try {

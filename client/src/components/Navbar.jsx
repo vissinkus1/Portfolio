@@ -19,6 +19,8 @@ export default function Navbar() {
           <a href="#skills" onClick={handleLinkClick}>Skills</a>
           <a href="#projects" onClick={handleLinkClick}>Projects</a>
           <a href="#experience" onClick={handleLinkClick}>Experience</a>
+          <a href="#research" onClick={handleLinkClick}>Research</a>
+          <a href="#certifications" onClick={handleLinkClick}>Courses</a>
           <a href="#contact" onClick={handleLinkClick}>Contact</a>
         </div>
 

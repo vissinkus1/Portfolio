@@ -38,8 +38,7 @@ export default function Contact() {
       <div className="section-header">
         <h2>Contact</h2>
         <p>
-          Let's connect for opportunities, collaborations, or project
-          discussions.
+          Open to full-time opportunities and technical discussions in ML Engineering, MLOps, Software Development, Full-Stack Development, and Agentic AI.
         </p>
       </div>
 
@@ -72,7 +71,7 @@ export default function Contact() {
             <textarea
               name="message"
               rows="5"
-              placeholder="Tell me about your project"
+              placeholder="Tell me about your role or project"
               required
               value={form.message}
               onChange={handleChange}
@@ -95,11 +94,13 @@ export default function Contact() {
         </form>
 
         <div className="contact-card">
-          <h3>Details</h3>
-          <p>Address: Greater Noida</p>
-          <p>Email: singhkushwahavishal344@gmail.com</p>
-          <p>Phone: +91-7755090060</p>
-          <div className="socials">
+          <h3>Contact Details</h3>
+          <p><strong>Location:</strong> Greater Noida, Uttar Pradesh, India</p>
+          <p><strong>Email:</strong> <a href="mailto:singhkushwahavishal344@gmail.com" style={{ color: 'var(--accent)' }}>singhkushwahavishal344@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+917755090060" style={{ color: 'var(--accent)' }}>+91-7755090060</a></p>
+          <p><strong>Target Roles:</strong> ML Engineer, MLOps, Software Developer, Full-Stack Developer, Agentic AI</p>
+          
+          <div className="socials" style={{ marginTop: '20px' }}>
             <a
               href="https://github.com/vissinkus1"
               target="_blank"
@@ -108,13 +109,27 @@ export default function Contact() {
               GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/vishal-singh-kushwaha27"
+              href="https://linkedin.com/in/vishal-singh-kushwaha27"
               target="_blank"
               rel="noreferrer"
             >
               LinkedIn
             </a>
+            <a
+              href="https://portfolio-vishal-dph9.onrender.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Portfolio
+            </a>
           </div>
+
+          {/* Resume PDF link placeholder:
+              TODO: Upload resume PDF to client/public/resume.pdf and link below:
+              <div style={{ marginTop: '16px' }}>
+                <a className="btn ghost" href="/resume.pdf" target="_blank" rel="noreferrer" style={{ fontSize: '13px' }}>Download Resume (PDF)</a>
+              </div>
+          */}
         </div>
       </div>
     </section>

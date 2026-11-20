@@ -299,6 +299,88 @@ h1 {
   color: var(--muted);
 }
 
+.project-summary {
+  color: #d1d5db !important;
+  font-size: 14px !important;
+  line-height: 1.55;
+  margin: 0 0 12px 0 !important;
+}
+
+.project-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-bullets li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.project-bullets li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.project-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.project-btn.primary {
+  background: rgba(106, 215, 221, 0.12);
+  color: var(--accent-2);
+  border: 1px solid rgba(106, 215, 221, 0.35);
+}
+
+.project-btn.primary:hover {
+  background: rgba(106, 215, 221, 0.22);
+  border-color: var(--accent-2);
+  transform: translateY(-2px);
+}
+
+.project-btn.outline {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  border: 1px solid var(--stroke);
+}
+
+.project-btn.outline:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.patent-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .tag-row {
   display: flex;
   flex-wrap: wrap;
@@ -377,6 +459,7 @@ h1 {
   .about-grid,
   .skills-grid,
   .project-grid,
+  .patent-grid,
   .contact-grid {
     grid-template-columns: 1fr;
   }
