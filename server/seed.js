@@ -142,8 +142,8 @@ const projects = [
       'Validated concurrent transaction handling with comprehensive integration tests; frontend deployed on Vercel, backend on Render.',
     ],
     tags: ['Java', 'Spring Boot', 'Hibernate', 'SQL (H2)', 'Maven', 'REST APIs', 'Thymeleaf', 'Vercel', 'Render'],
-    link: '',
-    github: '',
+    link: 'https://upi-without-internet-ten.vercel.app/',
+    github: 'https://github.com/vissinkus1/UPI_WITHOUT_INTERNET',
     order: 9,
   },
 ];

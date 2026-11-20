@@ -66,7 +66,6 @@ const FALLBACK_PROJECTS = [
     tags: ['Python', 'Google Gemini API', 'Streamlit', 'pytest', 'LangChain', 'JSON Schema'],
     link: '',
     github: '',
-    github: 'https://github.com/vissinkus1/netsage-ai',
   },
   {
     _id: '5',
@@ -130,22 +129,6 @@ const FALLBACK_PROJECTS = [
     tags: ['Python', 'BERT / Transformers', 'Scikit-learn', 'NLTK', 'Flask', 'Streamlit', 'Render'],
     link: 'https://sentiment-flask-app-i1vg.onrender.com',
     github: '',
-    github: 'https://github.com/vissinkus1/sentiment-flask-app',
-  },
-  {
-    _id: '9',
-    title: 'UPI Mesh – Offline Payment System',
-    badge: 'Java Full-Stack',
-    summary:
-      'Full-stack Java Spring Boot application implementing offline mesh peer-to-peer transaction simulation with cryptographic security.',
-    bullets: [
-      'Architected complete MVC pattern (Controller → Service → Repository) with H2 SQL database, Hibernate ORM, and Maven.',
-      'Implemented RSA/AES hybrid encryption, peer-to-peer mesh packet routing simulation, and idempotency layer preventing duplicate transactions.',
-      'Validated concurrent transaction handling with comprehensive integration tests; frontend deployed on Vercel, backend on Render.',
-    ],
-    tags: ['Java', 'Spring Boot', 'Hibernate', 'SQL (H2)', 'Maven', 'REST APIs', 'Thymeleaf', 'Vercel', 'Render'],
-    link: '',
-    github: '',
   },
   {
     _id: '9',
@@ -172,20 +155,14 @@ export default function Projects() {
     const fetchProjects = async () => {
       try {
         const { data } = await axios.get('/api/projects');
-        if (data.success && data.data.length > 0) {
-          // If server returns projects, merge with fallback bullets/summaries if needed
-          const merged = data.data.map((p, idx) => {
-            const fallback = FALLBACK_PROJECTS[idx] || {};
-            return {
-              ...fallback,
-              ...p,
-              bullets: p.bullets?.length ? p.bullets : fallback.bullets || [],
-              summary: p.summary || p.description || fallback.summary,
-              github: p.github || fallback.github || '',
-              link: p.link || fallback.link || '',
-            };
-          });
-          setProjects(merged);
+        // Only use DB data if it has been updated with the full schema and all projects
+        if (
+          data.success &&
+          Array.isArray(data.data) &&
+          data.data.length >= 8 &&
+          data.data[0]?.bullets?.length
+        ) {
+          setProjects(data.data);
         } else {
           setProjects(FALLBACK_PROJECTS);
         }
